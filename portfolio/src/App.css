@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+  color: #f6edb2;
+  padding: 2%;
+}
+
+h1,
+h3 {
+  font-size: 1.3rem;
+}
+
+.gifs {
+  width: 100px;
+  height: 80px;
+  border: 1px solid #f6edb2;
+  padding: 1%;
+  margin: 5%;
+}
+
+.gif {
+  height: 200px;
+  border: 1px solid #f6edb2;
+  padding: 1%;
+  margin: 5% auto;
+}
+
+.carousel-item {
+  float: none;
+  width: 80%;
+  margin: auto;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-items {
+  margin: auto 5%;
+}
+
+.carousel-caption {
+  color: rgb(34, 33, 33);
+  position: absolute;
+  bottom: 0;
+}
+
+.left {
+  flex-direction: column;
+  width: 15%;
+  float: left;
+  margin: 0;
+  position: fixed;
+  left: 5%;
+  top: 10%;
+}
+.left div,
+.right div {
+  padding: 5%;
+  border: 1px solid red;
+  border-radius: 15px;
+  margin-bottom: 35%;
+  color: rgb(48, 6, 43);
+  height: 180px;
+}
+
+.right {
+  flex-direction: column;
+  width: 15%;
+  float: right;
+  margin: 0;
+  position: fixed;
+  right: 5%;
+  top: 10%;
+}
+
+#box-1 {
+  background: linear-gradient(90deg, #9ec0db, #a0cea7, #cfecd0);
+}
+
+#box-2 {
+  background: linear-gradient(90deg, #f598a8, #f6edb2);
+}
+
+#box-3 {
+  background: linear-gradient(90deg, #faf0cd, #fab397);
+}
+
+#box-4 {
+  background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+}
+
+@keyframes STAR-MOVE {
+  from {
+    background-position: 5% 5%;
+  }
+  to {
+    background-position: 1300% 600%;
+  }
+}
+
+#background {
+  background: black url(new.jpg) 5% 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  animation-name: STAR-MOVE;
+  animation-duration: 1000s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  height: 140%;
+}
+
+#page-wrap {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  padding: 30px 50px;
+}
+
+.flex-links {
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  margin: 2.5%;
+  margin-bottom: 0;
+  color: #f6edb2;
+  z-index: 3;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
