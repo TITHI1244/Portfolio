@@ -1,6 +1,6 @@
 import React from "react";
 const Header = () => {
-  return <h1>Hey there 👋 Greetings from Tithi 😊</h1>;
+  return <h3>Hey there 👋 Greetings from Tithi 😊</h3>;
 };
 
 export default Header;
