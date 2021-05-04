@@ -4,7 +4,6 @@
   padding: 2%;
 }
 
-h1,
 h3 {
   font-size: 1.3rem;
 }
@@ -91,13 +90,16 @@ h3 {
   background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
 }
 
-@keyframes STAR-MOVE {
-  from {
-    background-position: 5% 5%;
-  }
-  to {
-    background-position: 1300% 600%;
-  }
+.project-links {
+  border-radius: 5px;
+  background-color: #1f1d16;
+  color: #f6edb2;
+  padding: 0.3em;
+}
+
+.project-links:hover {
+  text-decoration: none;
+  color: #928c6c; 
 }
 
 #background {
@@ -113,6 +115,15 @@ h3 {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   height: 140%;
+}
+
+@keyframes STAR-MOVE {
+  from {
+    background-position: 5% 5%;
+  }
+  to {
+    background-position: 1300% 600%;
+  }
 }
 
 #page-wrap {
